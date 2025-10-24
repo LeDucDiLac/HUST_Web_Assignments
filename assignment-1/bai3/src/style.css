@@ -1,0 +1,149 @@
+/* General styles */
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav .logo {
+  width: 2rem;
+}
+
+nav .nav-link {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  padding: 0.5rem;
+}
+
+nav .nav-link:hover {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+/* Product list */
+.products.section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.product.item {
+  flex: 0 1 30%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+  background: #fafafa;
+  text-align: center;
+}
+
+.product.item h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product.item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.product.item p {
+  color: #666;
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+/* Form */
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form input[type="submit"] {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 12px;
+  border-radius: 4px;
+}
+
+form input[type="submit"]:hover {
+  background-color: #2980b9;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .products.section {
+    flex-direction: column;
+  }
+
+  .product.item {
+    flex: 1 1 100%;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav .nav-link {
+    margin: 5px 0;
+  }
+}

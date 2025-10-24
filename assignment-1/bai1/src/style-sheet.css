@@ -1,0 +1,14 @@
+.logo {
+    width: 2rem;
+}
+
+nav {
+    display: flex;
+   background-color: DodgerBlue;
+   justify-content: space-between;
+   
+}
+
+article > img {
+    width: 10rem;
+}
