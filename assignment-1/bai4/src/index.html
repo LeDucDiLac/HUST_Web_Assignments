@@ -27,9 +27,9 @@
         <button id="searchBtn">Search</button>
       </div>
       <button id="addProductBtn">Add Product</button>
-      <section class="products section">
-        <article class="product item">
-          <h2>Pink Plushies</h2>
+      <section id="product-list" class="products section">
+        <article class="product-item">
+          <h2 class="product-name">Pink Plushies</h2>
           <img
             src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%2Fid%2FOIP.nJutt3yf0RDDToVaR2ix6AHaJ3%3Fpid%3DApi&f=1&ipt=ae394107cf19237f72e6b1b17b328a0b28f1ef029035e29d8cfea9cee2574f6e&ipo=images"
             alt=""
@@ -38,8 +38,8 @@
           <p>Price: $120</p>
         </article>
 
-        <article class="product item">
-          <h2>Raiden Shogun Pillow</h2>
+        <article class="product-item">
+          <h2 class="product-name">Raiden Shogun Pillow</h2>
           <img
             src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fres.cloudinary.com%2Fteepublic%2Fimage%2Fprivate%2Fs---T-KIoRD--%2Fc_crop%2Cx_10%2Cy_10%2Fc_fit%2Ch_788%2Fc_crop%2Cg_north_west%2Ch_1051%2Cw_1051%2Cx_-248%2Cy_-121%2Fl_upload%3Av1507037314%3Aproduction%3Ablanks%3Agbajnunp66ec7xftnpq1%2Ffl_layer_apply%2Cg_north_west%2Cx_-353%2Cy_-220%2Fb_rgb%3Ae2d1ff%2Fc_limit%2Cf_auto%2Ch_630%2Cq_auto%3Agood%3A420%2Cw_630%2Fv1636710608%2Fproduction%2Fdesigns%2F25520104_0.jpg&f=1&nofb=1&ipt=3b9d09e66f381448bf8c1aca42ecde0b457db047582ea543e2a8522f3a725e04"
             alt="raiden_pillow"
@@ -47,8 +47,8 @@
           <p>Price: $100</p>
         </article>
 
-        <article class="product item">
-          <h2>Crying Raiden Pillow</h2>
+        <article class="product-item">
+          <h2 class="product-name">Crying Raiden Pillow</h2>
           <img
             src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload-os-bbs.hoyolab.com%2Fupload%2F2023%2F11%2F16%2F16563480%2F0faf0e8b707cc5bc3403acbe686831d7_4363745479895369412.jpg&f=1&nofb=1&ipt=397bdcc5c3a11bc82eb69dff367ed1c6cc7b4d09377caf95619d8b8387cbf74f"
             alt="crying_raiden"
@@ -58,24 +58,16 @@
       </section>
 
       <form id="addProductForm" class="hidden">
-        <h2>Add New Product</h2>
-        <label for="productName">Product Name:</label><br />
-        <input type="text" id="productName" name="productName" required /><br />
-        <label for="productPrice">Price:</label><br />
-        <input
-          type="text"
-          id="productPrice"
-          name="productPrice"
-          required
-        /><br />
-        <label for="productImage">Image URL:</label><br />
-        <input
-          type="url"
-          id="productImage"
-          name="productImage"
-          required
-        /><br />
-        <input type="submit" value="Add Product" />
+        <h3>Add New Product</h3>
+        <label for="newName">Product Name:</label>
+        <input type="text" id="newName" required />
+        <label for="newPrice">Price:</label>
+        <input type="number" id="newPrice" required />
+        <label for="newDesc">Description:</label>
+        <textarea id="newDesc" rows="3"></textarea>
+        <button type="submit">Add</button>
+        <button type="button" id="cancelBtn">Cancel</button>
+        <p id="errorMsg" style="color: red"></p>
       </form>
 
       <form>

@@ -54,6 +54,62 @@ body {
   background-color: #27ae60;
 }
 
+/* Add Product Form */
+#addProductForm {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#addProductForm h3 {
+  margin-top: 0;
+}
+
+#addProductForm label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#addProductForm input,
+#addProductForm textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#addProductForm button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#addProductForm button[type="submit"] {
+  background-color: #3498db;
+  color: white;
+}
+
+#addProductForm button[type="submit"]:hover {
+  background-color: #2980b9;
+}
+
+#addProductForm button[type="button"] {
+  background-color: #95a5a6;
+  color: white;
+}
+
+#addProductForm button[type="button"]:hover {
+  background-color: #7f8c8d;
+}
+
 /* Header */
 header {
   background-color: #333;
@@ -96,7 +152,7 @@ nav .nav-link:hover {
   padding: 0 20px;
 }
 
-.product.item {
+.product-item {
   flex: 0 1 30%;
   border: 1px solid #ccc;
   padding: 10px;
@@ -105,20 +161,18 @@ nav .nav-link:hover {
   text-align: center;
 }
 
-.product.item h2 {
+.product-item .product-name {
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-.product.item img {
-  max-width: 100%;
-  height: auto;
+.product-item .product-desc {
   margin-bottom: 10px;
+  color: #666;
 }
 
-.product.item p {
-  color: #666;
+.product-item .product-price {
   font-weight: bold;
   color: #e74c3c;
 }
